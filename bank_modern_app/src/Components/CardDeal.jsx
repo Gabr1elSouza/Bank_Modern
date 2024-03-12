@@ -4,7 +4,7 @@ import Button from "./Button";
 
 const CardDeal = () => (
   <section className={`${layout.section}`}>
-    <div className=" flex flex-1 ">
+    <div className=" flex flex-1 flex-col ss:flex-row ">
       <div className={`${layout.sectionInfo}`}>
         <h2 className={`${styles.heading2}`}>
           Find a better card deal <br className="sm:block hidden" /> in few easy steps.
@@ -16,7 +16,7 @@ const CardDeal = () => (
         <Button styles={"mt-10"} />
       </div>
       <div className={`${layout.sectionImg}`}>
-        <img className="w-full h-full  " src={card} alt="card" />
+        <img className="w-full h-full  " src={card} alt={card} />
       </div>
     </div>
   </section>
